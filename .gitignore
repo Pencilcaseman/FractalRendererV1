@@ -10,6 +10,6 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-build
-cmake-build-*
-.idea
+./build
+./cmake-build-*
+./.idea

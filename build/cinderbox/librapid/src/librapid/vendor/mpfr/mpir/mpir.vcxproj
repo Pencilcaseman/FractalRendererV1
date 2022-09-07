@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99947E0F-358A-3E82-9352-0E5C6DCBDD72}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>mpir</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mpir.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mpir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mpir.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mpir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mpir.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mpir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mpir.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mpir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/librapid/src/librapid/vendor/mpfr/mpir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\assert.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\errno.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\extract-dbl.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\invalid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\memory.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mp_bpl.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mp_clz_tab.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mp_dv_tab.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mp_get_fns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mp_minv_tab.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mp_set_fns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\nextprime.c">
+      <ObjectFileName>$(IntDir)/mpir/nextprime.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\primesieve.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randbui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randclr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randdef.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randiset.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randlc2s.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randlc2x.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randmt.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randmts.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randmui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\rands.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randsd.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\randsdui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\tal-reent.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\version.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\dummy.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\isfuns.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\ismpf.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\ismpq.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\ismpz.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\ismpznw.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\osdoprnti.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\osfuns.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\osmpf.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\osmpq.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\cxx\osmpz.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\adjust.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\adjust_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\butterfly_lshB.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\butterfly_rshB.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\combine_bits.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\div_2expmod_2expp1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fermat_to_mpz.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fft_mfa_trunc_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fft_mfa_trunc_sqrt2_inner.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fft_negacyclic.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fft_radix2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fft_trunc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\fft_trunc_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\ifft_mfa_trunc_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\ifft_negacyclic.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\ifft_radix2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\ifft_trunc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\ifft_trunc_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\mul_2expmod_2expp1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\mul_fft_main.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\mul_mfa_trunc_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\mul_trunc_sqrt2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\mulmod_2expp1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\normmod_2expp1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\revbin.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\fft\split_bits.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\abs.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/abs.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\add.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/add.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\add_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/add_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\ceilfloor.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\clear.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/clear.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\clears.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/clears.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\cmp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/cmp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\cmp_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/cmp_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\cmp_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/cmp_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\cmp_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/cmp_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\cmp_z.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\div.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/div.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\div_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\div_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\dump.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/dump.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\eq.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_sint.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_sint.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_slong.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_slong.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_sshort.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_sshort.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_uint.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_uint.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_ulong.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_ulong.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\fits_ushort.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/fits_ushort.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/get_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_d_2exp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/get_d_2exp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_dfl_prec.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_prc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/get_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/get_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\get_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/get_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\init.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/init.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\init2.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/init2.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\inits.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/inits.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\inp_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/inp_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\int_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\iset.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/iset.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\iset_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/iset_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\iset_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/iset_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\iset_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/iset_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\iset_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/iset_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\mul.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/mul.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\mul_2exp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/mul_2exp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\mul_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/mul_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\neg.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/neg.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\out_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/out_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\pow_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/pow_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\random2.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/random2.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\reldiff.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\rrandomb.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/rrandomb.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_dfl_prec.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_prc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_prc_raw.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_q.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set_q.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\set_z.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/set_z.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\size.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/size.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\sqrt.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/sqrt.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\sqrt_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\sub.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/sub.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\sub_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/sub_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\swap.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/swap.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\trunc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\ui_div.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\ui_sub.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/ui_sub.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpf\urandomb.c">
+      <ObjectFileName>$(IntDir)/mpir/mpf/urandomb.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\add.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/add.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\add_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\add_err1_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\add_err2_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\add_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\addadd_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\addmul_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\addsub_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\and_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\andn_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\bdivmod.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\binvert.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\cmp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/cmp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\com_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\comb_tables.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\copyd.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\copyi.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_bdiv_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_bdiv_q_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_bdiv_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_bdiv_qr_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_div_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_div_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_div_qr_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dc_divappr_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divexact.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/divexact.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divexact_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divexact_by3c.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divexact_byff.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divexact_byfobm1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divisible_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_euclidean_qr_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_euclidean_qr_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_euclidean_r_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_hensel_qr_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_hensel_qr_1_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_hensel_qr_1_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_hensel_r_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\divrem_hensel_rsh_qr_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\dump.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/dump.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\fib2_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/fib2_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\fib_table.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\gcd.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/gcd.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\gcd_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\gcd_subdiv_step.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\gcdext.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/gcdext.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\gcdext_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\gcdext_lehmer.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\get_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/get_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\get_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/get_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hamdist.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/hamdist.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd2_jacobi.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd_appr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd_jacobi.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd_matrix.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd_reduce.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\hgcd_step.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\inv_div_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\inv_div_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\inv_div_qr_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\inv_divappr_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\inv_divappr_q_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\invert.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/invert.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\ior_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\iorn_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\jacobi.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/jacobi.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\jacobi_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\jacobi_base.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\lshift.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\matrix22_mul.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\matrix22_mul1_inverse_vector.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mod_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mod_1_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mod_1_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mod_1_3.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mod_34lsub1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\modexact_1c_odd.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mp_bases.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mul.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/mul.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mul_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mul_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mul_fft.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mul_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulhigh_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mullow_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mullow_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mullow_n_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulmid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulmid_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulmid_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulmod_2expm1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulmod_2expp1_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\mulmod_bexpp1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\nand_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\neg_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\nior_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\nsumdiff_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\perfect_square_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\popcount.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/popcount.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\pow_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\powlo.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\powm.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/powm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\preinv_divrem_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\preinv_mod_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\random.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\random2.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/random2.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\randomb.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\redc_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\redc_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\redc_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rootrem.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/rootrem.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rootrem_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rrandom.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rsh_divrem_hensel_qr_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rsh_divrem_hensel_qr_1_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rsh_divrem_hensel_qr_1_2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\rshift.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sb_bdiv_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sb_bdiv_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sb_div_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sb_div_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sb_divappr_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\scan0.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/scan0.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\scan1.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/scan1.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\set_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/set_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sizeinbase.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/sizeinbase.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sqr_basecase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sqrtrem.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/sqrtrem.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sub.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/sub.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sub_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sub_err1_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sub_err2_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sub_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\subadd_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\submul_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\sumdiff_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\tdiv_q.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/tdiv_q.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\tdiv_qr.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/tdiv_qr.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom3_mul.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom3_mul_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom42_mulmid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom4_mul.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom4_mul_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom8_sqr_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom8h_mul.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_couple_handling.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_eval_dgr3_pm1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_eval_dgr3_pm2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_eval_pm1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_eval_pm2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_eval_pm2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_eval_pm2rexp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\toom_interpolate_16pts.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\urandomb.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/urandomb.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\urandomm.c">
+      <ObjectFileName>$(IntDir)/mpir/mpn/generic/urandomm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\xnor_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\xor_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\zero.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpn\generic\zero_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\abs.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/abs.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\aors.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\canonicalize.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\clear.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/clear.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\clears.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/clears.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\cmp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/cmp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\cmp_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/cmp_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\cmp_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/cmp_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\div.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/div.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\equal.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\get_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/get_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\get_den.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\get_num.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\get_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/get_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\init.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/init.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\inits.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/inits.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\inp_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/inp_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\inv.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\md_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\mul.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/mul.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\neg.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/neg.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\out_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/out_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_den.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_f.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set_f.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_num.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\set_z.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/set_z.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpq\swap.c">
+      <ObjectFileName>$(IntDir)/mpir/mpq/swap.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\2fac_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\abs.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/abs.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\add.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/add.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\add_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/add_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\and.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\aorsmul.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\aorsmul_i.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\array_init.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\bin_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\bin_uiui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_q_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_qr_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_r.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_r_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cdiv_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cfdiv_q_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cfdiv_r_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\clear.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/clear.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\clears.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/clears.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\clrbit.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/cmp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmp_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/cmp_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmp_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/cmp_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmp_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/cmp_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmpabs.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmpabs_d.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cmpabs_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\com.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\combit.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cong.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cong_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\cong_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\dive_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\divegcd.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\divexact.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/divexact.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\divis.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\divis_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\divis_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\dump.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/dump.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\export.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fac_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_q.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_q_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_qr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_qr_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_r.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_r_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fdiv_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fib2_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fib2_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fib_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_sint.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_sint.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_slong.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_slong.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_sshort.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_sshort.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_uint.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_uint.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_ulong.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_ulong.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\fits_ushort.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/fits_ushort.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\gcd.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/gcd.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\gcd_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\gcdext.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/gcdext.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/get_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_d_2exp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/get_d_2exp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/get_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/get_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_sx.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/get_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\get_ux.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\getlimbn.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\hamdist.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/hamdist.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\import.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\init.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/init.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\init2.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/init2.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\inits.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/inits.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\inp_raw.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\inp_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/inp_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\invert.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/invert.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\ior.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/iset.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/iset_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/iset_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/iset_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset_sx.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/iset_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\iset_ux.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\jacobi.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/jacobi.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\kronsz.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\kronuz.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\kronzs.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\kronzu.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\lcm.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\lcm_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\likely_prime_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\limbs_finish.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\limbs_modify.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\limbs_read.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\limbs_write.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\lucnum2_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\lucnum_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\mfac_uiui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\miller_rabin.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\millerrabin.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\mod.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\mul.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/mul.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\mul_2exp.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/mul_2exp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\mul_si.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\mul_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/mul_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\n_pow_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\neg.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/neg.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\next_prime_candidate.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\nextprime.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/nextprime.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\nthroot.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\oddfac_1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\out_raw.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\out_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/out_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\perfpow.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\perfsqr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\popcount.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/popcount.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\pow_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/pow_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\powm.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/powm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\powm_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\pprime_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\primorial_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\probable_prime_p.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\prodlimbs.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\realloc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\realloc2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\remove.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\roinit_n.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\root.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\rootrem.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/rootrem.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\rrandomb.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/rrandomb.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\scan0.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/scan0.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\scan1.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/scan1.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_d.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set_d.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_f.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set_f.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_q.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set_q.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_si.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set_si.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_str.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set_str.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_sx.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/set_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\set_ux.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\setbit.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\size.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/size.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\sizeinbase.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/sizeinbase.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\sqrt.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/sqrt.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\sqrtrem.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/sqrtrem.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\sub.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/sub.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\sub_ui.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/sub_ui.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\swap.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/swap.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_q.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/tdiv_q.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_q_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_q_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_qr.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/tdiv_qr.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_qr_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_r.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_r_2exp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_r_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tdiv_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\trial_division.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\tstbit.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\ui_pow_ui.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\ui_sub.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/ui_sub.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\urandomb.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/urandomb.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\urandomm.c">
+      <ObjectFileName>$(IntDir)/mpir/mpz/urandomm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\mpz\xor.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\asprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\asprntffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\doprnt.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\doprntf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\doprnti.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\fprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\obprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\obprntffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\obvprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\printf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\printffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\repl-vsnprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\snprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\snprntffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\sprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\sprintffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\vasprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\vfprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\vprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\vsnprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\printf\vsprintf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\doscan.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\fscanf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\fscanffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\scanf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\sscanf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\sscanffuns.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\vfscanf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\vscanf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir\scanf\vsscanf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\ZERO_CHECK.vcxproj">
+      <Project>{2F6B46F4-0EFB-3074-AC75-615EFCB4A8B8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

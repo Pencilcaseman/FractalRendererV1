@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc\src\const.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc\src\cpuid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc\src\support_x86.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\trigonometric_SSE2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\trigonometric_SSE3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\trigonometric_SSSE3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\trigonometric_SSE4_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\trigonometric_AVX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\trigonometric_AVX2+FMA+BMI2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\sse_sorthelper_SSE2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\sse_sorthelper_SSE4_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\sse_sorthelper_AVX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\sse_sorthelper_AVX2+FMA+BMI2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\avx_sorthelper_AVX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\avx_sorthelper_AVX2+FMA+BMI2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\trigonometric_SSE2.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\trigonometric_SSE3.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\trigonometric_SSSE3.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\trigonometric_SSE4_1.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\trigonometric_AVX.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\trigonometric_AVX2+FMA+BMI2.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\sse_sorthelper_SSE2.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\sse_sorthelper_SSE4_1.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\sse_sorthelper_AVX.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\sse_sorthelper_AVX2+FMA+BMI2.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\avx_sorthelper_AVX.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\build\CMakeFiles\bca55c3204f6c909b661e86fd3fa8c58\avx_sorthelper_AVX2+FMA+BMI2.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B5277B4E-4176-3DC6-80AD-CA8EDC10EBC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{51CDD929-F687-3A88-857A-5421231C77F9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

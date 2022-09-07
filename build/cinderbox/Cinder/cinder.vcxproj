@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BA133E99-8995-3CD3-9C0B-5163E302308F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>cinder</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\lib\msw\x64\Debug\$(PlatformToolset)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cinder.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cinder</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\lib\msw\x64\Release\$(PlatformToolset)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cinder.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cinder</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\lib\msw\x64\MinSizeRel\$(PlatformToolset)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cinder.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cinder</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\lib\msw\x64\RelWithDebInfo\$(PlatformToolset)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cinder.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cinder</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner></SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 Ws2_32.lib wldap32.lib shlwapi.lib OpenGL32.lib wmvcore.lib Strmiids.lib Msimg32.lib</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner></SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 Ws2_32.lib wldap32.lib shlwapi.lib OpenGL32.lib wmvcore.lib Strmiids.lib Msimg32.lib</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner></SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 Ws2_32.lib wldap32.lib shlwapi.lib OpenGL32.lib wmvcore.lib Strmiids.lib Msimg32.lib</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner></SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\Cinder\include\jsoncpp;C:\dev\FractalRenderer\cinderbox\Cinder\include\tinyexr;C:\dev\FractalRenderer\cinderbox\Cinder\include\imgui;C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak;C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\dev\FractalRenderer\cinderbox\Cinder\include\oggvorbis;C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar;C:\dev\FractalRenderer\cinderbox\Cinder\include\freetype;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw\zlib;C:\dev\FractalRenderer\cinderbox\Cinder\include\msw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 Ws2_32.lib wldap32.lib shlwapi.lib OpenGL32.lib wmvcore.lib Strmiids.lib Msimg32.lib</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\FractalRenderer\cinderbox\Cinder\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/Cinder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/Cinder/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_source_files.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_target.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\modules\cinderConfig.buildtree.cmake.in;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\platform_msw.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\utilities.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\build\cinderbox\Cinder\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/Cinder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/Cinder/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_source_files.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_target.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\modules\cinderConfig.buildtree.cmake.in;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\platform_msw.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\utilities.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\build\cinderbox\Cinder\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/Cinder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/Cinder/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_source_files.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_target.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\modules\cinderConfig.buildtree.cmake.in;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\platform_msw.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\utilities.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\build\cinderbox\Cinder\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/FractalRenderer/cinderbox/Cinder/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/cinderbox/Cinder/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_configure.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_source_files.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\libcinder_target.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\modules\cinderConfig.buildtree.cmake.in;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\platform_msw.cmake;C:\dev\FractalRenderer\cinderbox\Cinder\proj\cmake\utilities.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\build\cinderbox\Cinder\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Area.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\BandedMatrix.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Base64.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\BSpline.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\BSplineFit.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Buffer.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Camera.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\CameraUi.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Channel.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\CinderAssert.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\CinderMath.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Clipboard.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Color.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\DataSource.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\DataTarget.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Display.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Exception.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Filesystem.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\FileWatcher.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Font.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Frustum.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\GeomIo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageFileTinyExr.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageIo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageSourceFileRadiance.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageSourceFileStbImage.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageTargetFileStbImage.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Json.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Log.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Matrix.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\MediaTime.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ObjLoader.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Path2d.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Perlin.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Plane.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\PolyLine.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Rand.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Ray.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Rect.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Shape2d.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Signals.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Sphere.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Stream.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Surface.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\System.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Text.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Timeline.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\TimelineItem.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Timer.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Triangulate.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\TriMesh.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Tween.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Unicode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Url.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Utilities.cpp">
+      <ObjectFileName>$(IntDir)/src/cinder/Utilities.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Xml.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Capture.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\Serial.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\AppBase.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\KeyEvent.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\Platform.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\Renderer.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\RendererGl.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\Window.cpp">
+      <ObjectFileName>$(IntDir)/src/cinder/app/Window.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\ChannelRouterNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Context.cpp">
+      <ObjectFileName>$(IntDir)/src/cinder/audio/Context.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\DelayNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Device.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\FileOggVorbis.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\FilterNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\GenNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\InputNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Node.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\NodeMath.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\MonitorNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\OutputNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\PanNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Param.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\SamplePlayerNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\SampleRecorderNode.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Source.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Target.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Utilities.cpp">
+      <ObjectFileName>$(IntDir)/src/cinder/audio/Utilities.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\Voice.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\WaveTable.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\dsp\Biquad.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\dsp\Converter.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\dsp\Dsp.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\dsp\Fft.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Batch.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\BufferObj.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\BufferTexture.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\ConstantConversions.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Context.cpp">
+      <ObjectFileName>$(IntDir)/src/cinder/gl/Context.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\draw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Environment.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\EnvironmentCore.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\EnvironmentEs.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Fbo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\GlslProg.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Pbo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Query.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\scoped.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Sampler.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Shader.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\ShaderPreprocessor.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Sync.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Texture.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\TextureFont.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\TextureFormatParsers.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\TransformFeedbackObj.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Ubo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Vao.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\VaoImplCore.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\VaoImplEs.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\VaoImplSoftware.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\Vbo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\VboMesh.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\wrapper.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\gl\nv\Multicast.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Blend.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Blur.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Checkerboard.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Fill.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Grayscale.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Premultiply.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Threshold.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\EdgeDetect.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Flip.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Hdr.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Resize.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ip\Trim.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\svg\Svg.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\tinyexr\tinyexr.cc" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\glad\glad.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\jsoncpp\jsoncpp.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak\linebreak.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak\linebreakdata.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\linebreak\linebreakdef.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\bucketalloc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\dict.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\geom.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\mesh.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\priorityq.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\sweep.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\libtess2\tess.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\params\Params.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwColors.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwFonts.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\LoadOGL.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\LoadOGLCore.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwBar.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwMgr.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwOpenGL.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwOpenGLCore.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwPrecomp.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\CinderImGui.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_tables.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\bdf\bdf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\cff\cff.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\pcf\pcf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\pfr\pfr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\sfnt\sfnt.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\truetype\truetype.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\type1\type1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\type42\type42.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\winfonts\winfnt.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftbase.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftbbox.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftbdf.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftbitmap.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftcid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftdebug.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftfstype.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftgasp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftglyph.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftgxval.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftinit.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftmm.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftotval.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftpatent.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftpfr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftstroke.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftsynth.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftsystem.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\fttype1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\base\ftwinfnt.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\raster\raster.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\smooth\smooth.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\autofit\autofit.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\bzip2\ftbzip2.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\cache\ftcache.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\gzip\ftgzip.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\lzw\ftlzw.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\gxvalid\gxvalid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\otvalid\otvalid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\psaux\psaux.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\pshinter\pshinter.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\psnames\psnames.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\cid\type1cid.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\freetype\bdf\bdflib.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\adler32.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\compress.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\crc32.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\deflate.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\gzclose.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\gzlib.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\gzread.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\gzwrite.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\infback.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\inffast.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\inflate.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\inftrees.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\trees.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\uncompr.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\zlib\zutil.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\r8brain\r8bbase.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\ogg\bitwise.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\ogg\framing.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\analysis.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\bitrate.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\block.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\codebook.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\envelope.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\floor0.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\floor1.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\info.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\lookup.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\lpc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\lsp.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\mapping0.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\mdct.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\psy.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\registry.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\res0.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\sharedbook.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\smallft.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\synthesis.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\vorbisenc.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\vorbisfile.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\oggvorbis\vorbis\window.c">
+      <ObjectFileName>$(IntDir)/src/oggvorbis/vorbis/window.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\CaptureImplDirectShow.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\videoInput\videoInput.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\msw\CinderMsw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\msw\CinderMswGdiPlus.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\msw\StackWalker.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageSourceFileWic.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\ImageTargetFileWic.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\UrlImplWinInet.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\glad\glad_wgl.c" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\AntTweakBar\TwDirect3D11.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\AppScreenSaver.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\AppImplMsw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\AppImplMswBasic.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\AppImplMswScreenSaver.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\AppMsw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\PlatformMsw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\RendererImpl2dGdi.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\app\msw\RendererImplGlMsw.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\msw\ContextWasapi.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\msw\DeviceManagerWasapi.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\msw\FileMediaFoundation.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\msw\MswUtil.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\dsp\ooura\fftsg.cpp" />
+    <ClCompile Include="C:\dev\FractalRenderer\cinderbox\Cinder\src\cinder\audio\dsp\ConverterR8brain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\ZERO_CHECK.vcxproj">
+      <Project>{2F6B46F4-0EFB-3074-AC75-615EFCB4A8B8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

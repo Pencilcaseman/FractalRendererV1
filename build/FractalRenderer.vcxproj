@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BEC5EDCC-AE3C-352A-8644-91EFA9BEE1D9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>FractalRenderer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FractalRenderer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FractalRenderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FractalRenderer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FractalRenderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FractalRenderer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">FractalRenderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FractalRenderer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">FractalRenderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS=\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include\";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>cinderbox\Debug\cinderbox.lib;..\cinderbox\Cinder\lib\msw\x64\Debug\$(PlatformToolset)\cinder.lib;cinderbox\librapid\Debug\librapid.lib;..\cinderbox\librapid\src\librapid\blas\openblas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\nvrtc.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufftw.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusparse.lib;Dbghelp.lib;cinderbox\librapid\src\librapid\vendor\fmt\Debug\fmtd.lib;cinderbox\librapid\src\librapid\vendor\scnlib\Debug\scn.lib;cinderbox\librapid\src\librapid\vendor\Vc\Debug\Vc.lib;cinderbox\librapid\src\librapid\vendor\mpfr\Debug\mpfr.lib;cinderbox\librapid\src\librapid\vendor\mpfr\mpir\Debug\mpir.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/dev/FractalRenderer/build/Debug/FractalRenderer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/FractalRenderer/build/Debug/FractalRenderer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS=\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include\";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>cinderbox\Release\cinderbox.lib;..\cinderbox\Cinder\lib\msw\x64\Release\$(PlatformToolset)\cinder.lib;cinderbox\librapid\Release\librapid.lib;..\cinderbox\librapid\src\librapid\blas\openblas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\nvrtc.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufftw.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusparse.lib;Dbghelp.lib;cinderbox\librapid\src\librapid\vendor\fmt\Release\fmt.lib;cinderbox\librapid\src\librapid\vendor\scnlib\Release\scn.lib;cinderbox\librapid\src\librapid\vendor\Vc\Release\Vc.lib;cinderbox\librapid\src\librapid\vendor\mpfr\Release\mpfr.lib;cinderbox\librapid\src\librapid\vendor\mpfr\mpir\Release\mpir.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/dev/FractalRenderer/build/Release/FractalRenderer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/FractalRenderer/build/Release/FractalRenderer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS=\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include\";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>cinderbox\MinSizeRel\cinderbox.lib;..\cinderbox\Cinder\lib\msw\x64\MinSizeRel\$(PlatformToolset)\cinder.lib;cinderbox\librapid\MinSizeRel\librapid.lib;..\cinderbox\librapid\src\librapid\blas\openblas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\nvrtc.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufftw.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusparse.lib;Dbghelp.lib;cinderbox\librapid\src\librapid\vendor\fmt\MinSizeRel\fmt.lib;cinderbox\librapid\src\librapid\vendor\scnlib\MinSizeRel\scn.lib;cinderbox\librapid\src\librapid\vendor\Vc\MinSizeRel\Vc.lib;cinderbox\librapid\src\librapid\vendor\mpfr\MinSizeRel\mpfr.lib;cinderbox\librapid\src\librapid\vendor\mpfr\mpir\MinSizeRel\mpir.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/dev/FractalRenderer/build/MinSizeRel/FractalRenderer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/FractalRenderer/build/MinSizeRel/FractalRenderer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FT2_BUILD_LIBRARY;FT_DEBUG_LEVEL_TRACE;_LIB;UNICODE;_UNICODE;NOMINMAX;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;LIBRAPID_HAS_OMP;LIBRAPID_HAS_BLAS;LIBRAPID_HAS_CUDA;LIBRAPID_CUDA_STREAM;CUDA_INCLUDE_DIRS=\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/include\";LIBRAPID_USE_VC;LIBRAPID_USE_MULTIPREC;SCN_HEADER_ONLY=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\FractalRenderer\cinderbox\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\blas;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\cudahelpers;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\alt;C:\dev\FractalRenderer\cinderbox\librapid\src;C:\dev\FractalRenderer\cinderbox\librapid;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\fmt\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\scnlib\include;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\Vc;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr\src;C:\dev\FractalRenderer\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir;C:\dev\FractalRenderer\cinderbox\Cinder\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>cinderbox\RelWithDebInfo\cinderbox.lib;..\cinderbox\Cinder\lib\msw\x64\RelWithDebInfo\$(PlatformToolset)\cinder.lib;cinderbox\librapid\RelWithDebInfo\librapid.lib;..\cinderbox\librapid\src\librapid\blas\openblas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\nvrtc.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufftw.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cusparse.lib;Dbghelp.lib;cinderbox\librapid\src\librapid\vendor\fmt\RelWithDebInfo\fmt.lib;cinderbox\librapid\src\librapid\vendor\scnlib\RelWithDebInfo\scn.lib;cinderbox\librapid\src\librapid\vendor\Vc\RelWithDebInfo\Vc.lib;cinderbox\librapid\src\librapid\vendor\mpfr\RelWithDebInfo\mpfr.lib;cinderbox\librapid\src\librapid\vendor\mpfr\mpir\RelWithDebInfo\mpir.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/dev/FractalRenderer/build/RelWithDebInfo/FractalRenderer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/FractalRenderer/build/RelWithDebInfo/FractalRenderer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\FractalRenderer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/FractalRenderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\FractalRenderer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/FractalRenderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\FractalRenderer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/FractalRenderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\FractalRenderer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/FractalRenderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\cmake\bin\cmake.exe -SC:/dev/FractalRenderer -BC:/dev/FractalRenderer/build --check-stamp-file C:/dev/FractalRenderer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\dev\FractalRenderer\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\cmake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\opt\cmake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\FractalRenderer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\dev\FractalRenderer\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\ZERO_CHECK.vcxproj">
+      <Project>{2F6B46F4-0EFB-3074-AC75-615EFCB4A8B8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\Vc\Vc.vcxproj">
+      <Project>{69F244C3-75CD-396D-B3EB-930A8C5C80DD}</Project>
+      <Name>Vc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\Cinder\cinder.vcxproj">
+      <Project>{BA133E99-8995-3CD3-9C0B-5163E302308F}</Project>
+      <Name>cinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\cinderbox.vcxproj">
+      <Project>{F13ADB58-83BD-3DAF-A3C4-94FBA44091F3}</Project>
+      <Name>cinderbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\fmt\fmt.vcxproj">
+      <Project>{87164FD5-7DDB-3758-A335-2997DDBCB696}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\librapid\librapid.vcxproj">
+      <Project>{F018D283-70BA-3DAE-B687-21AC9C958A56}</Project>
+      <Name>librapid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpfr.vcxproj">
+      <Project>{C61E2886-8BEF-3799-8F0E-C750BF6D4AC3}</Project>
+      <Name>mpfr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\mpfr\mpir\mpir.vcxproj">
+      <Project>{99947E0F-358A-3E82-9352-0E5C6DCBDD72}</Project>
+      <Name>mpir</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\FractalRenderer\build\cinderbox\librapid\src\librapid\vendor\scnlib\scn.vcxproj">
+      <Project>{96A21455-E474-3CD1-ADD7-FE250F80BBCB}</Project>
+      <Name>scn</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

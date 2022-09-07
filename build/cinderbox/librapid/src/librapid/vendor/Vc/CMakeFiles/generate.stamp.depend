@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/CMakeLists.txt
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/CTestCustom.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/AddCompilerFlag.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/AddTargetProperty.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/CheckCCompilerFlag.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/CheckCXXCompilerFlag.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/OptimizeForArchitecture.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/UserWarning.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/VcConfig.cmake.in
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/Vc/cmake/VcMacros.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/opt/cmake/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CTest.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CTestUseLaunchers.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake

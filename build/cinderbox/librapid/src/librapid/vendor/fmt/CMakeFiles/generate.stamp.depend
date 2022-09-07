@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/fmt/CMakeLists.txt
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/fmt/support/cmake/JoinPaths.cmake
+C:/dev/FractalRenderer/cinderbox/librapid/src/librapid/vendor/fmt/support/cmake/cxx14.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CMakeParseArguments.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/GNUInstallDirs.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/Internal/CheckCompilerFlag.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/opt/cmake/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake

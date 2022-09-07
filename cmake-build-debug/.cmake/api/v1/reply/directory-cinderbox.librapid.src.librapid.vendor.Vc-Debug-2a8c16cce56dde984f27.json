@@ -1,0 +1,141 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cinderbox/librapid/src/librapid/vendor/Vc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 192,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 194,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 216,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 232,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc.lib"
+			],
+			"targetId" : "Vc::@f795e544c90e65d41402",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/Vc",
+			"paths" : 
+			[
+				{
+					"from" : "cinderbox/librapid/src/librapid/vendor/Vc/Vc",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/Vc",
+			"paths" : 
+			[
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/Allocator",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/IO",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/Memory",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/SimdArray",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/Utils",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/Vc",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/algorithm",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/array",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/iterators",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/limits",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/simdize",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/span",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/type_traits",
+				"cinderbox/librapid/src/librapid/vendor/Vc/Vc/vector"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Vc",
+			"exportName" : "VcTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "Vc::@f795e544c90e65d41402",
+					"index" : 5
+				}
+			],
+			"paths" : 
+			[
+				"cinderbox/librapid/src/librapid/vendor/Vc/CMakeFiles/Export/lib/cmake/Vc/VcTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Vc",
+			"paths" : 
+			[
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/UserWarning.cmake",
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/VcMacros.cmake",
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/AddCompilerFlag.cmake",
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/CheckCCompilerFlag.cmake",
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/CheckCXXCompilerFlag.cmake",
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/OptimizeForArchitecture.cmake",
+				"cinderbox/librapid/src/librapid/vendor/Vc/cmake/FindVc.cmake",
+				"cmake-build-debug/cinderbox/librapid/src/librapid/vendor/Vc/cmake/VcConfig.cmake",
+				"cmake-build-debug/cinderbox/librapid/src/librapid/vendor/Vc/cmake/VcConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "cinderbox/librapid/src/librapid/vendor/Vc",
+		"source" : "cinderbox/librapid/src/librapid/vendor/Vc"
+	}
+}

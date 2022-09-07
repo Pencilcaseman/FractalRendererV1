@@ -1,0 +1,49 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"cinderbox/librapid/src/librapid/vendor/Vc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 183,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Vc::@f795e544c90e65d41402"
+		}
+	],
+	"id" : "other::@f795e544c90e65d41402",
+	"name" : "other",
+	"paths" : 
+	{
+		"build" : "cinderbox/librapid/src/librapid/vendor/Vc",
+		"source" : "cinderbox/librapid/src/librapid/vendor/Vc"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

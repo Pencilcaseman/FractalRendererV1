@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "cinderbox/librapid/src/librapid/vendor/scnlib/src",
+		"source" : "cinderbox/librapid/src/librapid/vendor/scnlib/src"
+	}
+}

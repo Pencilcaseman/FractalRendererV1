@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "cinderbox/librapid/src/librapid/vendor/fmt",
+		"source" : "cinderbox/librapid/src/librapid/vendor/fmt"
+	}
+}

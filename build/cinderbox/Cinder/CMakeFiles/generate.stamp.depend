@@ -1,9 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/dev/FractalRenderer/cinderbox/Cinder/CMakeLists.txt
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/configure.cmake
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/libcinder_configure.cmake
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/libcinder_source_files.cmake
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/libcinder_target.cmake
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/modules/cinderConfig.buildtree.cmake.in
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/platform_msw.cmake
-C:/dev/FractalRenderer/cinderbox/Cinder/proj/cmake/utilities.cmake

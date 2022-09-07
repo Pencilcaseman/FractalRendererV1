@@ -42,6 +42,6 @@ CTestTestfile.cmake
 _deps
 
 # Build files
-build/
-cmake-build-*/
-.idea/
+build
+cmake-build-**
+.idea
